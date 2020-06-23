@@ -119,7 +119,9 @@ console.log(2 * 4 === `8`); //* строгое "равенство" сравни
 
 const isChecked = true,
 	isClose = true;
-console.log(isChecked && isClose);
+console.log(isChecked && isClose); //* означает "and"
+console.log(isChecked || isClose); //* означает "or"
+
 
 
 
