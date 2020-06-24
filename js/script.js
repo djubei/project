@@ -155,22 +155,82 @@ const personalMovieDB = {
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
+
+//*!  цыклы
+
 console.log(personalMovieDB);
 
+if (4 == 9) { //* цикл
+	console.log(`ok!`);
+} else {
+	console.log(`.!.`);
+}
+
+const num = 50;
+
+if (num < 49) {
+	console.log(`( * )`);
+} else if (num > 100) {
+	console.log(`&====>`);
+} else {
+	console.log(`&====>( * )`);
+}
+
+(num == 50) ? console.log(`.!.`): console.log(`&====>`); //* тернарный оператор ,цикл
+
+switch (num) { //* тоже конструкция цицлы
+	case 49: //*case строгое сравнение - равно ли 49(выполняется ли условие) аналог "if"
+		console.log(`wrong`);
+		break;
+	case 100:
+		console.log(`too much`);
+		break;
+	case 50:
+		console.log(`well done`);
+		break;
+	default: //* аналог "else"
+		console.log(`default`);
+		break;
+}
+
+//*! циклы
+
+let numb = 50;
+
+while (numb < 55) {
+	console.log(numb);
+	numb++;
+}
+
+do { //* тот же цикл только с пост условием
+	console.log(numb);
+	numb++;
+}
+while (numb < 55);
+
+
+for (let i = 1; i < 8; i++) {
+	console.log(numb);
+	numb++;
+}
+
+for (let i = 1; i < 8; i++) { //* создаем "if break "чтобы цикл не был бесконечным
+
+	if (i === 6) {
+		break;
+	}
+	console.log(i);
+}
 
 
 
+for (let i = 1; i < 8; i++) { //* создаем "if break "чтобы цикл пропускал тот шаг который находится в условии if допусти четные числа и тд
 
-
-
-
-
-
-
-
-
-
-
+	if (i === 6) {
+		continue;
+	}
+	console.log(i);
+}
 
 
 
