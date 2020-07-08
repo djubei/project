@@ -1,8 +1,7 @@
 'use strict';
 
 
-const a = prompt(`Один из последних просмотренных фильмов?`, `?`),
-	b = +prompt(`На сколько оцените его?`, `?`);
+
 
 const personalMovieDB = {
 	count: 0,
@@ -47,9 +46,9 @@ const personalMovieDB = {
 	},
 	toggleVisibleMyDB: function () {
 		if (personalMovieDB.privat) {
-			privat = !privat
+			personalMovieDB.privat = false;
 		} else {
-			privat = !privat
+			personalMovieDB.privat = true;
 		}
 	},
 
